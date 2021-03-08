@@ -26,7 +26,28 @@ class Frontloops extends StatelessWidget {
               SizedBox(
                 height: kGapBetweenTitleAndContent,
               ),
-              PassInformation(),
+              Row(
+                children: [
+                  Expanded(
+                    child: PassInformation(
+                      passInformation: PassInfo.flight,
+                      passValue: "815",
+                    ),
+                  ),
+                  Expanded(
+                    child: PassInformation(
+                      passInformation: PassInfo.gate,
+                      passValue: "23G",
+                    ),
+                  ),
+                  Expanded(
+                    child: PassInformation(
+                      passInformation: PassInfo.seat,
+                      passValue: "10F",
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

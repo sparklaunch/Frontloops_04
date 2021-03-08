@@ -1,5 +1,11 @@
 import "package:flutter/material.dart";
 
+enum PassInfo {
+  flight,
+  gate,
+  seat,
+}
+
 const String kAppBarTitle = "Frontloops 04";
 
 const double kContainerWidth = 350.0;
@@ -26,4 +32,15 @@ const TextStyle kPassTitleTextStyle = TextStyle(
 const TextStyle kPassSubTitleTextStyle = TextStyle(
   color: Color.fromRGBO(160, 160, 160, 1),
   fontWeight: FontWeight.w500,
+);
+
+const TextStyle kPassInformationTitleTextStyle = TextStyle(
+  color: Color.fromRGBO(160, 160, 160, 1),
+  fontWeight: FontWeight.w500,
+);
+
+const TextStyle kPassInformationContentTextStyle = TextStyle(
+  fontSize: 18.0,
+  fontWeight: FontWeight.w600,
+  letterSpacing: -1,
 );
