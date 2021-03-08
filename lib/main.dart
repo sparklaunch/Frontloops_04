@@ -4,6 +4,7 @@ import "./constants.dart";
 
 import "./PassContainer.dart";
 import "./PassTitle.dart";
+import "./PassInformation.dart";
 
 void main() {
   runApp(Frontloops());
@@ -19,8 +20,13 @@ class Frontloops extends StatelessWidget {
         ),
         body: PassContainer(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              PassTitle(),
+              PassTitle(departure: "Frankfurt", arrival: "Amsterdam"),
+              SizedBox(
+                height: kGapBetweenTitleAndContent,
+              ),
+              PassInformation(),
             ],
           ),
         ),
