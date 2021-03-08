@@ -4,6 +4,9 @@ enum PassInfo {
   flight,
   gate,
   seat,
+  passenger,
+  Class,
+  departure,
 }
 
 const String kAppBarTitle = "Frontloops 04";
@@ -12,6 +15,9 @@ const double kContainerWidth = 350.0;
 const double kContainerTopMargin = 50.0;
 const double kContainerPadding = 30.0;
 const double kGapBetweenTitleAndContent = 30.0;
+const double kGapBetweenPassInfoAndContent = 20.0;
+const double kGapBetweenPassInfos = 15.0;
+const double kQRImageScale = 1.5;
 
 const BoxDecoration kContainerBoxDecoration = BoxDecoration(
   image: DecorationImage(

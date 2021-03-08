@@ -10,11 +10,14 @@ class PassContainer extends StatelessWidget {
     return Container(
       child: Center(
         child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5.0),
+            color: Colors.white,
+          ),
           child: this.child,
           padding: EdgeInsets.all(
             kContainerPadding,
           ),
-          color: Colors.white,
           width: kContainerWidth,
           margin: EdgeInsets.only(
             top: kContainerTopMargin,
